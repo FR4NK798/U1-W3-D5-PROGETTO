@@ -123,7 +123,7 @@ console.log(deleteOne("cane", false));
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 // const eS5 = "I have 4 dogs";
-const eS5 = "I have 4 dogs";
+const eS5 = "I have 44 dogs4";
 
 const onlyLetters = (str) => {
   const newArray = str.split("");
@@ -401,21 +401,35 @@ contTd(allTd);
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-const link = document.querySelector("div a");
-console.log(link);
-link.style = "background-color: red";
+const link1 = document.querySelector(".class-link");
+const link2 = document.querySelector(".link");
+console.log(link1, link2);
+link1.style = "background-color: red";
+link2.style = "background-color: red";
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+const newLi = document.createElement("li");
+newLi.innerText = "quarto";
+
+const uList = document.getElementById("myList");
+console.log(uList);
+
+uList.appendChild(newLi);
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+uList.remove();
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+const tableRow = document.querySelector("tr");
+tableRow.classList.add("test");
+console.log(tableRow);
 
 // [EXTRA] JS Avanzato
 
